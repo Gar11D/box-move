@@ -7,7 +7,7 @@ h1 {
     text-align: center;
 }
 
-.box-container {
+.box-container1 {
     display: flex;
     justify-content: space-around;
     background-color: greenyellow;
@@ -65,6 +65,36 @@ h1 {
 
 #button-box button:active {
     box-shadow: none;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+#array-box1{
+    background-color: skyblue;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#array-box2{
+    background-color: skyblue;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
 }
 
 
