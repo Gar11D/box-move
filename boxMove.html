@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <link rel ="stylesheet" type = "text/css" href="boxmove.css">
     <title>Box Move</title>
+    <script src = "boxMove.js"></script> <!--this worked with test function-->
 </head>
 <body>
     <h1>Box Move Practice</h1>
@@ -10,16 +11,19 @@
     <div class="box-container">
         <div class="box">
             <h3>Box 1</h3>
-            <div class="item-box">
+            <div id="item-box1">
                 <span>Item 1</span>
             </div>
         </div>
         <div class ="box" id="button-box">
             <p>Click on the button below to move the item between boxes</p>
-            <button>Click me</button>
+            <button onclick="testFunction()">Click me</button>
         </div>
         <div class="box">
             <h3>Box 2</h3>
+            <div id="item-box2">
+                <span>Item 1</span>
+            </div>
         </div>
     </div>
 </body>

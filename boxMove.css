@@ -22,7 +22,7 @@ h1 {
     border: 1px solid black;
 }
 
-.item-box{
+#item-box1{
     background-color: skyblue;
     text-align: center;
     align-content: center;
@@ -31,6 +31,19 @@ h1 {
     margin: 5%;
     padding: 1%;
     border: 1px solid black;
+    display: block
+}
+
+#item-box2{
+    background-color: skyblue;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    height: 20px;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+    display: none;
 }
 
 #button-box {
