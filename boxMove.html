@@ -15,7 +15,7 @@
                 <span>Item 1</span>
             </div>
         </div>
-        <div class ="box" id="button-box">
+        <div class ="box" id="button-box1">
             <p>Click on the button below to move the item between boxes</p>
             <button onclick="testFunction()">Click me</button>
         </div>
@@ -33,9 +33,13 @@
                 <!-- <span>Array 1: </span> -->
             </div>
         </div>
-        <div class ="box" id="button-box">
+        <div class ="box" id="button-box2">
             <p>Click on the button below to move the array values between boxes</p>
-            <button onclick="arrayMove()">Click me</button>
+            <div class="button-box-container">
+                <button id="left-arrow">Move left</button>
+                <div id="arrow-box"> Click on the arrows to move the items </div>
+                <button id="right-arrow" onclick="arrayMove()"> Move right</button>
+            </div>
         </div>
         <div class="box">
             <h3>Array 2</h3>

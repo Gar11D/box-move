@@ -46,12 +46,13 @@ h1 {
     display: none;
 }
 
-#button-box {
+#button-box1 {
     background-color: beige;
     text-align: center;
+    width: 30%; 
 }
 
-#button-box button {
+#button-box1 button {
     background-color: yellow;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +72,34 @@ h1 {
     display: flex;
     justify-content: space-around;
     background-color: aquamarine;
+}
+
+#button-box2 {
+    background-color: beige;
+    text-align: center;
+    width: 30%; 
+}
+
+.button-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-box-container #left-arrow {
+    width: 25%;
+}
+
+.button-box-container #right-arrow {
+    width: 25%;
+}
+
+.button-box-container #arrow-box {
+    width: 40%;
+    display: inline-block;
+    background-color: #FFFF00;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 #array-box1{
