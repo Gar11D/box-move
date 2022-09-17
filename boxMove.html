@@ -36,9 +36,9 @@
         <div class ="box" id="button-box2">
             <p>Click on the button below to move the array values between boxes</p>
             <div class="button-box-container">
-                <button id="left-arrow">Move left</button>
+                <button id="left-arrow" onclick="arrayMoveLeft()">Move left</button>
                 <div id="arrow-box"> Click on the arrows to move the items </div>
-                <button id="right-arrow" onclick="arrayMove()"> Move right</button>
+                <button id="right-arrow" onclick="arrayMoveRight()"> Move right</button>
             </div>
         </div>
         <div class="box">
@@ -66,13 +66,22 @@
         displayer();
         displayer2();
         
-        const arrayMove = () => {
+        const arrayMoveRight = () => {
             fruitArray[0]
                 ? (myArray.push(fruitArray[fruitArray.length -1]), 
                    fruitArray.splice(fruitArray.length -1, 1),
                    document.getElementById("array-box2").innerHTML = myArray,
                    document.getElementById("array-box1").innerHTML = fruitArray)
-                : alert("That's enough now");
+                : alert("Array 1 is empty.");
+        }
+
+        const arrayMoveLeft = () => {
+            myArray[0]
+                ? (fruitArray.push(myArray[myArray.length -1]), 
+                   myArray.splice(myArray.length -1, 1),
+                   document.getElementById("array-box2").innerHTML = myArray,
+                   document.getElementById("array-box1").innerHTML = fruitArray)
+                : alert("Array 2 is empty.");
         }
 
     </script>
