@@ -35,21 +35,41 @@
         </div>
         <div class ="box" id="button-box">
             <p>Click on the button below to move the array values between boxes</p>
-            <button>Click me</button>
+            <button onclick="arrayMove()">Click me</button>
         </div>
         <div class="box">
             <h3>Array 2</h3>
             <div id="array-box2">
-                <span></span>
+                
             </div>
         </div>
     </div>
 
     <script>
+        
+        const myArray= [];
+        const fruitArray= [' apples', ' bananas', ' oranges', ' pears'];
+        
         function displayer() {
-            const fruitList= [' apples', ' bananas', ' oranges', ' pears'];
-            document.getElementById("array-box1").innerHTML = fruitList;
+            // const fruitArray= [' apples', ' bananas', ' oranges', ' pears'];
+            document.getElementById("array-box1").innerHTML = fruitArray;
+        }
+        
+        function displayer2() {
+            // const myArray= ['test'];
+            document.getElementById("array-box2").innerHTML = myArray;
         }
         displayer();
+        displayer2();
+        
+        const arrayMove = () => {
+            fruitArray[0]
+                ? (myArray.push(fruitArray[fruitArray.length -1]), 
+                   fruitArray.splice(fruitArray.length -1, 1),
+                   document.getElementById("array-box2").innerHTML = myArray,
+                   document.getElementById("array-box1").innerHTML = fruitArray)
+                : alert("That's enough now");
+        }
+
     </script>
 </body>
