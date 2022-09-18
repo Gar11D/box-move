@@ -16,7 +16,7 @@ h1 {
 .box {
     background-color: deeppink;
     width: 20%;
-    height: 150px;
+    height: auto;
     margin: 5%;
     padding: 1%;
     border: 1px solid black;
@@ -126,6 +126,103 @@ h1 {
     border: 1px solid black;
 }
 
+.box-container3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+}
 
+.box-container3 .box {
+    width: 35%;
+}
 
+#array-box3{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
 
+#array-box4{
+    background-color: #DFB2F4;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#button-box3 {
+    background-color: chartreuse;
+    text-align: center;
+    width: 30%; 
+    height: auto;
+}
+
+#array-box3-1{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#array-box3-2{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#array-box3-3{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#array-box3-4{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#array-box3-5{
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
