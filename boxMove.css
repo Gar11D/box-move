@@ -253,8 +253,11 @@ h1 {
 } */
 
 #add-remove-select-1 {
-    background-color: red;
-    width: 20%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    min-width: 40px;
+    height: 20px;
+    align-self: center;
 }
 
 #add-remove-select-1 :hover {
@@ -263,8 +266,11 @@ h1 {
 }
 
 #add-remove-select-2 {
-    background-color: red;
-    width: 20%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    min-width: 40px;
+    height: 20px;
+    align-self: center;
 }
 
 #add-remove-select-2 :hover {
@@ -273,8 +279,11 @@ h1 {
 }
 
 #add-remove-select-3 {
-    background-color: red;
-    width: 20%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    min-width: 40px;
+    height: 20px;
+    align-self: center;
 }
 
 #add-remove-select-3 :hover {
@@ -283,8 +292,11 @@ h1 {
 }
 
 #add-remove-select-4 {
-    background-color: red;
-    width: 20%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    min-width: 40px;
+    height: 20px;
+    align-self: center;
 }
 
 #add-remove-select-4 :hover {
@@ -293,11 +305,67 @@ h1 {
 }
 
 #add-remove-select-5 {
-    background-color: red;
-    width: 20%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    min-width: 40px;
+    height: 20px;
+    align-self: center;
 }
 
 #add-remove-select-5 :hover {
     font-weight: bold;
     cursor: pointer;
 }
+
+#playlist-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: deeppink;
+    text-align: center;
+    align-content: center;
+    width: 90%;
+    min-height: 20px;
+    height: auto;
+    margin: 0px;
+    padding: 1%;
+    /* padding-right: 5%; */
+    /* border: 1px dotted black; */
+    text-align: center;
+}
+
+#playlist-box div{
+    display: flex;
+    justify-content: start;
+    background-color: limegreen;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    min-height: 20px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    /* padding-right: 5%; */
+    border: 1px solid black;
+    text-align: center;
+}
+
+#playlist-box div #test-div {
+    display: none;
+}
+
+/* #playlist-node{
+    display: flex;
+    justify-content: end;
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    min-height: 20px;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    padding-right: 5%;
+    border: 1px solid black;
+    text-align: center;
+} */
