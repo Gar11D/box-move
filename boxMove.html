@@ -48,13 +48,45 @@
         <div class="box">
             <h3>Songlist</h3>
             <div id="array-box3-1">
-                <span>+</span>
-                <span>-</span>
+                <div id="song-detail-box-1">
+                </div>
+                <div id ="add-remove-select-1">
+                    <span>-</span>
+                    <span>+</span>
+                </div>
             </div>
-            <div id="array-box3-2"></div>
-            <div id="array-box3-3"></div>
-            <div id="array-box3-4"></div>
-            <div id="array-box3-5"></div>
+            <div id="array-box3-2">
+                <div id="song-detail-box-2">
+                </div>
+                <div id ="add-remove-select-2">
+                    <span>-</span>
+                    <span>+</span>
+                </div>
+            </div>
+            <div id="array-box3-3">
+                <div id="song-detail-box-3">
+                </div>
+                <div id ="add-remove-select-3">
+                    <span>-</span>
+                    <span>+</span>
+                </div>
+            </div>
+            <div id="array-box3-4">
+                <div id="song-detail-box-4">
+                </div>
+                <div id ="add-remove-select-4">
+                    <span>-</span>
+                    <span>+</span>
+                </div>
+            </div>
+            <div id="array-box3-5">
+                <div id="song-detail-box-5">
+                </div>
+                <div id ="add-remove-select-5">
+                    <span>-</span>
+                    <span>+</span>
+                </div>
+            </div>
         </div>
         <div class ="box" id="button-box3">
             <p>Add songs from the songlist to the playlist  using the + and -
@@ -105,6 +137,24 @@
                    document.getElementById("array-box2").innerHTML = myArray,
                    document.getElementById("array-box1").innerHTML = fruitArray)
                 : alert("Array 2 is empty.");
+        }
+
+        const songArray= [
+            {_id:1, songTitle: 'Umbrella', artist: 'Rihanna',
+            album: 'Good Girl Gone Bad'
+            },
+            {_id:2, songTitle: 'Frozen', artist: 'Madonna', album: 'Ray of Light'},
+            {_id:3, songTitle: 'Here with me', artist: 'Dido', album: 'No Angel'},
+            {_id:4, songTitle: 'Biology', artist: 'Girls Aloud', album: 'Chemistry'},
+            {_id:5, songTitle: 'Girlfriend', artist: 'Avril Lavigne',
+            album: 'The Best Damn Thing'}
+        ];
+
+        for (let i =0 ; i < songArray.length ; i++) {
+            document.getElementById(`song-detail-box-${i + 1}`).innerHTML 
+            = 
+            songArray[i].songTitle + " | " + songArray[i].artist + " | " +
+            songArray[i].album;
         }
 
     </script>

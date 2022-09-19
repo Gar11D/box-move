@@ -1,6 +1,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: default;
 }
 
 h1 {
@@ -168,6 +169,8 @@ h1 {
 }
 
 #array-box3-1{
+    display: flex;
+    justify-content: end;
     background-color: greenyellow;
     text-align: center;
     align-content: center;
@@ -176,10 +179,14 @@ h1 {
     height: auto;
     margin: 5%;
     padding: 1%;
+    padding-right: 5%;
     border: 1px solid black;
+    text-align: center;
 }
 
 #array-box3-2{
+    display: flex;
+    justify-content: end;
     background-color: greenyellow;
     text-align: center;
     align-content: center;
@@ -188,10 +195,14 @@ h1 {
     height: auto;
     margin: 5%;
     padding: 1%;
+    padding-right: 5%;
     border: 1px solid black;
+    text-align: center;
 }
 
 #array-box3-3{
+    display: flex;
+    justify-content: end;
     background-color: greenyellow;
     text-align: center;
     align-content: center;
@@ -200,10 +211,14 @@ h1 {
     height: auto;
     margin: 5%;
     padding: 1%;
+    padding-right: 5%;
     border: 1px solid black;
+    text-align: center;
 }
 
 #array-box3-4{
+    display: flex;
+    justify-content: end;
     background-color: greenyellow;
     text-align: center;
     align-content: center;
@@ -212,10 +227,14 @@ h1 {
     height: auto;
     margin: 5%;
     padding: 1%;
+    padding-right: 5%;
     border: 1px solid black;
+    text-align: center;
 }
 
 #array-box3-5{
+    display: flex;
+    justify-content: end;
     background-color: greenyellow;
     text-align: center;
     align-content: center;
@@ -224,5 +243,61 @@ h1 {
     height: auto;
     margin: 5%;
     padding: 1%;
+    padding-right: 5%;
     border: 1px solid black;
+    text-align: center;
+}
+
+/* .add-remove-select :hover {
+    background-color: deeppink;
+} */
+
+#add-remove-select-1 {
+    background-color: red;
+    width: 20%;
+}
+
+#add-remove-select-1 :hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#add-remove-select-2 {
+    background-color: red;
+    width: 20%;
+}
+
+#add-remove-select-2 :hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#add-remove-select-3 {
+    background-color: red;
+    width: 20%;
+}
+
+#add-remove-select-3 :hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#add-remove-select-4 {
+    background-color: red;
+    width: 20%;
+}
+
+#add-remove-select-4 :hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#add-remove-select-5 {
+    background-color: red;
+    width: 20%;
+}
+
+#add-remove-select-5 :hover {
+    font-weight: bold;
+    cursor: pointer;
 }
