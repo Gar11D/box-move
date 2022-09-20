@@ -159,28 +159,24 @@
             = 
             songArray[i].songTitle + " | " + songArray[i].artist + " | " +
             songArray[i].album;
-        }
+        };
 
         const playlist = [];
 
         const addSong1 = () => {
             const result1 = songArray.find(x => x._id === 1);
-            
             if (playlist.find(x => x._id === 1)) {
-                alert('this song is already in the playlist')
+                alert('this song is already in the playlist');
+                console.log(playlist);
             }
             else {
                 playlist.push(result1);
-                // document.getElementById("playlist-box").innerHTML = playlist;
-                // const newDiv = document.createElement(`div id="playlist-node"`);
                 const newDiv = document.createElement(`div`);
                 newDiv.setAttribute("id", "songId1");
                 const newContent = document.createTextNode(
                 result1.songTitle + " | " + result1.artist + " | " +
                 result1.album
                 );
-                // const newContent = document.createTextNode( "hello"
-                // ); THIS WORKED
                 newDiv.appendChild(newContent);
                 const parentDiv = document.getElementById("playlist-box");
                 const siblingDiv = document.getElementById("test-div");
@@ -189,27 +185,11 @@
             }
         }
 
-        const removeSong1 = () => {
-            const result1 = playlist.find(x => x._id === 1);
-            if (playlist.find(x => x._id === 1)) {
-                // playlist.splice(result);
-                playlist.splice(playlist.find(x => x._id === 1), 1);
-                // console.log(playlist);
-                const element1 = document.getElementById("songId1");
-                element1.remove();
-                console.log(playlist);
-            }
-            else {
-                alert("this song isn't in the playlist")
-                // console.log(playlist);
-            }
-        }
-
         const addSong2 = () => {
             const result2 = songArray.find(x => x._id === 2);
-            
             if (playlist.find(x => x._id === 2)) {
-                alert('this song is already in the playlist')
+                alert('this song is already in the playlist');
+                console.log(playlist);
             }
             else {
                 playlist.push(result2);
@@ -227,20 +207,62 @@
             }
         }
 
-        const removeSong2 = () => {
-            const result2 = playlist.find(x => x._id === 2);
-            if (playlist.find(x => x._id === 2)) {
-                // playlist.splice(result);
-                playlist.splice(playlist.find(x => x._id === 2), 1);
-                console.log(playlist);
-                const element2 = document.getElementById("songId2");
-                element2.remove();
-            }
-            else {
-                alert("this song isn't in the playlist")
-                console.log(playlist);
-            }
-        }
+        // https://stackoverflow.com/questions/15287865/remove-array-element-based-on-object-property
+        // try above page for song remove function;
+        //the below removeSong functions using if/else do not work. iterate backwards using for loop instead
+
+        // const removeSong1 = () => {
+        //     const result1 = playlist.find(x => x.songTitle === 'Umbrella');
+        //     if (result1) {
+        //         // playlist.splice(result);
+        //         playlist.splice(result1, 1);
+        //         // console.log(playlist);
+        //         const element1 = document.getElementById("songId1");
+        //         element1.remove();
+        //         console.log(playlist);
+        //     }
+        //     else {
+        //         alert("this song isn't in the playlist")
+        //         console.log(playlist);
+        //     }
+        // }
+
+        // const removeSong2 = () => {
+        //     const result2 = playlist.find(x => x.songTitle === 'Frozen');
+        //     if (result2) {
+        //         // playlist.splice(result);
+        //         playlist.splice(result2, 1);
+        //         const element2 = document.getElementById("songId2");
+        //         element2.remove();
+        //         console.log(playlist);
+        //     }
+        //     else {
+        //         alert("this song isn't in the playlist")
+        //         console.log(playlist);
+        //     }
+        // }
+            
+            const removeSong1 = () => {
+                for (let i = playlist.length - 1; i >= 0; i--) {
+                    if (playlist[i]._id === 1) {
+                    playlist.splice(i, 1);
+                    const element1 = document.getElementById("songId1");
+                    element1.remove();
+                    console.log(playlist);
+                    }
+                }
+            };
+
+            const removeSong2 = () => {
+                for (let i = playlist.length - 1; i >= 0; i--) {
+                    if (playlist[i]._id === 2) {
+                    playlist.splice(i, 1);
+                    const element2 = document.getElementById("songId2");
+                    element2.remove();
+                    console.log(playlist);
+                    }
+                }
+            };
 
     </script>
 </body>
