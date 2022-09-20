@@ -67,24 +67,24 @@
                 <div id="song-detail-box-3">
                 </div>
                 <div id ="add-remove-select-3">
-                    <span>-</span>
-                    <span>+</span>
+                    <span onclick="removeSong3()">-</span>
+                    <span onclick="addSong3()">+</span>
                 </div>
             </div>
             <div id="array-box3-4">
                 <div id="song-detail-box-4">
                 </div>
                 <div id ="add-remove-select-4">
-                    <span>-</span>
-                    <span>+</span>
+                    <span onclick="removeSong4()">-</span>
+                    <span onclick="addSong4()">+</span>
                 </div>
             </div>
             <div id="array-box3-5">
                 <div id="song-detail-box-5">
                 </div>
                 <div id ="add-remove-select-5">
-                    <span>-</span>
-                    <span>+</span>
+                    <span onclick="removeSong5()">-</span>
+                    <span onclick="addSong5()">+</span>
                 </div>
             </div>
         </div>
@@ -207,12 +207,78 @@
             }
         }
 
+        const addSong3 = () => {
+            const result3 = songArray.find(x => x._id === 3);
+            if (playlist.find(x => x._id === 3)) {
+                alert('this song is already in the playlist');
+                console.log(playlist);
+            }
+            else {
+                playlist.push(result3);
+                const newDiv = document.createElement(`div`);
+                newDiv.setAttribute("id", "songId3");
+                const newContent = document.createTextNode(
+                result3.songTitle + " | " + result3.artist + " | " +
+                result3.album
+                );
+                newDiv.appendChild(newContent);
+                const parentDiv = document.getElementById("playlist-box");
+                const siblingDiv = document.getElementById("test-div");
+                parentDiv.insertBefore(newDiv, siblingDiv);
+                console.log(playlist);
+            }
+        }
+
+        const addSong4 = () => {
+            const result4 = songArray.find(x => x._id === 4);
+            if (playlist.find(x => x._id === 4)) {
+                alert('this song is already in the playlist');
+                console.log(playlist);
+            }
+            else {
+                playlist.push(result4);
+                const newDiv = document.createElement(`div`);
+                newDiv.setAttribute("id", "songId4");
+                const newContent = document.createTextNode(
+                result4.songTitle + " | " + result4.artist + " | " +
+                result4.album
+                );
+                newDiv.appendChild(newContent);
+                const parentDiv = document.getElementById("playlist-box");
+                const siblingDiv = document.getElementById("test-div");
+                parentDiv.insertBefore(newDiv, siblingDiv);
+                console.log(playlist);
+            }
+        }
+
+        const addSong5 = () => {
+            const result5 = songArray.find(x => x._id === 5);
+            if (playlist.find(x => x._id === 5)) {
+                alert('this song is already in the playlist');
+                console.log(playlist);
+            }
+            else {
+                playlist.push(result5);
+                const newDiv = document.createElement(`div`);
+                newDiv.setAttribute("id", "songId5");
+                const newContent = document.createTextNode(
+                result5.songTitle + " | " + result5.artist + " | " +
+                result5.album
+                );
+                newDiv.appendChild(newContent);
+                const parentDiv = document.getElementById("playlist-box");
+                const siblingDiv = document.getElementById("test-div");
+                parentDiv.insertBefore(newDiv, siblingDiv);
+                console.log(playlist);
+            }
+        }
+
         // https://stackoverflow.com/questions/15287865/remove-array-element-based-on-object-property
         // try above page for song remove function;
         //the below removeSong functions using if/else do not work. iterate backwards using for loop instead
 
         // const removeSong1 = () => {
-        //     const result1 = playlist.find(x => x.songTitle === 'Umbrella');
+        //     const result1 = playlist.find(x => x._id === 1);
         //     if (result1) {
         //         // playlist.splice(result);
         //         playlist.splice(result1, 1);
@@ -228,7 +294,7 @@
         // }
 
         // const removeSong2 = () => {
-        //     const result2 = playlist.find(x => x.songTitle === 'Frozen');
+        //     const result2 = playlist.find(x => x._id === 2);
         //     if (result2) {
         //         // playlist.splice(result);
         //         playlist.splice(result2, 1);
@@ -259,6 +325,39 @@
                     playlist.splice(i, 1);
                     const element2 = document.getElementById("songId2");
                     element2.remove();
+                    console.log(playlist);
+                    }
+                }
+            };
+
+            const removeSong3 = () => {
+                for (let i = playlist.length - 1; i >= 0; i--) {
+                    if (playlist[i]._id === 3) {
+                    playlist.splice(i, 1);
+                    const element3 = document.getElementById("songId3");
+                    element3.remove();
+                    console.log(playlist);
+                    }
+                }
+            };
+
+            const removeSong4 = () => {
+                for (let i = playlist.length - 1; i >= 0; i--) {
+                    if (playlist[i]._id === 4) {
+                    playlist.splice(i, 1);
+                    const element4 = document.getElementById("songId4");
+                    element4.remove();
+                    console.log(playlist);
+                    }
+                }
+            };
+
+            const removeSong5 = () => {
+                for (let i = playlist.length - 1; i >= 0; i--) {
+                    if (playlist[i]._id === 5) {
+                    playlist.splice(i, 1);
+                    const element5 = document.getElementById("songId5");
+                    element5.remove();
                     console.log(playlist);
                     }
                 }
