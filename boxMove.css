@@ -336,15 +336,15 @@ h1 {
 
 #playlist-box div{
     display: flex;
-    justify-content: start;
-    background-color: limegreen;
+    justify-content: center;
+    background-color: lightseagreen;
     text-align: center;
     align-content: center;
     width: 100%;
     min-height: 20px;
     height: auto;
-    margin: 5px;
-    padding: 0px;
+    margin: 2%;
+    padding: 1%;
     /* padding-right: 5%; */
     border: 1px solid black;
     text-align: center;
