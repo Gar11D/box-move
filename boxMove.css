@@ -248,10 +248,6 @@ h1 {
     text-align: center;
 }
 
-/* .add-remove-select :hover {
-    background-color: deeppink;
-} */
-
 #add-remove-select-1 {
     background-color: whitesmoke;
     border: 2px solid black;
@@ -353,19 +349,3 @@ h1 {
 #playlist-box div #test-div {
     display: none;
 }
-
-/* #playlist-node{
-    display: flex;
-    justify-content: end;
-    background-color: greenyellow;
-    text-align: center;
-    align-content: center;
-    width: 80%;
-    min-height: 20px;
-    height: auto;
-    margin: 5%;
-    padding: 1%;
-    padding-right: 5%;
-    border: 1px solid black;
-    text-align: center;
-} */

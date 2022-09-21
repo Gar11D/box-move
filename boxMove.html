@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <link rel ="stylesheet" type = "text/css" href="boxmove.css">
     <title>Box Move</title>
-    <script src = "boxMove.js"></script> <!--this worked with test function-->
+    <script src = "boxMove.js"></script> 
 </head>
 <body>
     <h1>Box Move Practice</h1>
@@ -92,11 +92,6 @@
             <p>Add songs from the songlist to the playlist  using the + and -
             buttons
             </p>
-            <!-- <div class="button-box-container">
-                <button id="left-arrow">Move left</button>
-                <div id="arrow-box"> Click on the arrows to move the items </div>
-                <button id="right-arrow"> Move right</button>
-            </div> -->
         </div>
         <div class="box">
             <h3> My Playlist </h3>
@@ -165,7 +160,7 @@
             const result = songArray.find(x => x._id === id);
 
             if (playlist.find(x => x._id === id)) {
-                alert('Song #' + id + ' is already in the playlist');
+                // alert('Song #' + id + ' is already in the playlist');
                 console.log(playlist);
             }
             else {
